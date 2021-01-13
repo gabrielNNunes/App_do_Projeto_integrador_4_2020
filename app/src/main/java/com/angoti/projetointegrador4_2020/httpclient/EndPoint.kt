@@ -29,10 +29,10 @@ interface EndPoint {
     fun obterEnderecoUsuarios(@Header("Authorization") token: String?): Call<List<AddressDTO>>
 
     @POST("address_user/{id}")
-    fun cadastraEnderecoUsuario(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body user: AddressDTO): Call<AddressDTO>
+    fun cadastraEnderecoUsuario(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body address: AddressDTO): Call<AddressDTO>
 
     @PUT("address_user/{id}")
-    fun alterarEnderecoUsuario(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body user: AddressDTO): Call<Void>
+    fun alterarEnderecoUsuario(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body address: AddressDTO): Call<Void>
 
     @DELETE("address_user/{id}")
     fun excluirEnderecoUsuario(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String): Call<Void>
@@ -43,10 +43,10 @@ interface EndPoint {
     fun obterConcessionarias(@Header("Authorization") token: String?): Call<List<DtoDealership>>
 
     @POST("dealership")
-    fun cadastraConcessionaria(@Body user: DtoDealership,@Header("Authorization") token: String?): Call<DtoDealership>
+    fun cadastraConcessionaria(@Body dealership: DtoDealership,@Header("Authorization") token: String?): Call<DtoDealership>
 
     @PUT("dealership/{id}")
-    fun alterarConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body user: DtoDealership): Call<Void>
+    fun alterarConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body dealership: DtoDealership): Call<Void>
 
     @DELETE("dealership/{id}")
     fun excluirConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String): Call<Void>
@@ -57,13 +57,27 @@ interface EndPoint {
     fun obterEnderecoConcessionaria(@Header("Authorization") token: String?): Call<List<AddressDTO>>
 
     @POST("address_dealership/{id}")
-    fun cadastraEnderecoConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body user: AddressDTO): Call<AddressDTO>
+    fun cadastraEnderecoConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body address: AddressDTO): Call<AddressDTO>
 
     @PUT("address_dealership/{id}")
-    fun alterarEnderecoConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body user: AddressDTO): Call<Void>
+    fun alterarEnderecoConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body address: AddressDTO): Call<Void>
 
     @DELETE("address_dealership/{id}")
     fun excluirEnderecoConcessionaria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String): Call<Void>
+
+    //Category ===========================================================================================
+
+    @GET("categories")
+    fun obterCategorias(): Call<List<CategoryDTO>>
+
+    @POST("categories")
+    fun cadastraCategoria(@Body categoria: CategoryDTO): Call<CategoryDTO>
+
+    @PUT("categories/{id}")
+    fun alterarCategoria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body category: CategoryDTO): Call<Void>
+
+    @DELETE("categories/{id}")
+    fun excluirCategoria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String): Call<Void>
 
 
 

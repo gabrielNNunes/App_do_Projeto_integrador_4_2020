@@ -13,6 +13,33 @@
         android:usesCleartextTraffic="true">
 
         <activity
+            android:name=".activities.activitiesCategory.AlteracaoDeCategoriaActivity"
+            android:label="Alterar a Categoria"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.activitiesCategory.ListagemDeCategoriaActivity"
+            android:label="Listagem de Categorias"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.activitiesCategory.CadastroDeCategoriaActivity"
+            android:label="Nova Categoria"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+
+
+        <activity
             android:name=".activities.activitiesAddressDealership.AlteracaoDeEnderecoDaConcessionariaActivity"
             android:label="Alterar Endereço da Concessionária"
             android:parentActivityName=".activities.MainActivity">

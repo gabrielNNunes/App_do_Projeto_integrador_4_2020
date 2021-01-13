@@ -36,4 +36,10 @@
     <item
         android:id="@+id/action_todos_enderecos_concessionaria"
         android:title="Todos Endereços de Concessionária" />
+    <item
+        android:id="@+id/action_nova_categoria"
+        android:title="Nova Categoria" />
+    <item
+        android:id="@+id/action_todas_categorias"
+        android:title="Todas as Categorias" />
 </menu>

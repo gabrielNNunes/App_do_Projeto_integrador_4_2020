@@ -11,6 +11,8 @@ import com.angoti.projetointegrador4_2020.activities.activitiesAddressDealership
 import com.angoti.projetointegrador4_2020.activities.activitiesAddressUser.CadastroDeEderecoDeUsuarioActivity
 import com.angoti.projetointegrador4_2020.activities.activitiesAddressUser.ListagemDeEnderecoDeUsuariosActivity
 import com.angoti.projetointegrador4_2020.activities.activitiesAuth.LoginActivity
+import com.angoti.projetointegrador4_2020.activities.activitiesCategory.CadastroDeCategoriaActivity
+import com.angoti.projetointegrador4_2020.activities.activitiesCategory.ListagemDeCategoriaActivity
 import com.angoti.projetointegrador4_2020.activities.activitiesDealerShip.CadastroDeConcessionariaActivity
 import com.angoti.projetointegrador4_2020.activities.activitiesDealerShip.ListagemDeConcessionariaActivity
 import com.angoti.projetointegrador4_2020.activities.activitiesUser.AlteracaoDeUsuarioActivity
@@ -71,6 +73,14 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.action_todos_enderecos_concessionaria-> {
                 startActivity(Intent(this, ListagemDeEnderecoDaConcessionariaActivity::class.java))
+                true
+            }
+            R.id.action_nova_categoria -> {
+                startActivity(Intent(this, CadastroDeCategoriaActivity::class.java))
+                true
+            }
+            R.id.action_todas_categorias-> {
+                startActivity(Intent(this, ListagemDeCategoriaActivity::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)
