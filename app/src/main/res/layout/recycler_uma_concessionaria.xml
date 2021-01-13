@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rv_lista_de_concessionaria_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8E3E3"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:text="Concessionaria Carro Feliz" />
+
+    <TextView
+        android:id="@+id/rv_lista_de_concessionaria_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#E8E3E3"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:text="34991237894" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.angoti.projetointegrador4_2020.activities.MainActivity">
+    <item
+        android:id="@+id/action_login"
+        android:icon="@drawable/ic_action_login"
+        android:title="Login"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_alterar_user"
+        android:title="Alterar"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_novo_user"
+        android:title="Novo usuário" />
+    <item
+        android:id="@+id/action_todos_user"
+        android:icon="@drawable/ic_action_todos"
+        android:title="Todos usuários" />
+    <item
+        android:id="@+id/action_novo_enredeco_user"
+        android:title="Novo Endereço usuário" />
+    <item
+        android:id="@+id/action_todos_enredeco_user"
+        android:title="Todos Endereços usuários" />
+    <item
+        android:id="@+id/action_nova_concessionaria"
+        android:title="Nova Concessionária" />
+    <item
+        android:id="@+id/action_todas_concessionarias"
+        android:title="Todas as concessionárias" />
+    <item
+        android:id="@+id/action_novo_endereco_concessionaria"
+        android:title="Novo Endereço Concessionária" />
+    <item
+        android:id="@+id/action_todos_enderecos_concessionaria"
+        android:title="Todos Endereços de Concessionária" />
+</menu>
