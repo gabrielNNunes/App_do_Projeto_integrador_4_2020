@@ -79,6 +79,33 @@ interface EndPoint {
     @DELETE("categories/{id}")
     fun excluirCategoria(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String): Call<Void>
 
+    @GET("categories/product/{id}")
+    fun obterCategoriaPorProduto(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String): Call<List<CategoryDTO>>
+
+    //Category ===========================================================================================
+
+    @GET("products")
+    fun obterProducts(): Call<List<ProductDTO>>
+
+    @POST("products")
+    fun cadastraProduct( @Header("Authorization") tokenAutenticacao: String,@Body product: ProductDTO): Call<ProductDTO>
+
+    @PUT("products/{id}")
+    fun alterarProduct(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body product: ProductDTO): Call<Void>
+
+    @DELETE("products/{id}")
+    fun excluirProduct(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String): Call<Void>
+
+
+
+    @PUT("/products/{id}/addcategory")
+    fun adicionarCategoriaAoProduto(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body product: CategoryDTO): Call<Void>
+
+    @PUT("/products/{id}/removecategory")
+    fun removerCategoriaDoProduto(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body product: CategoryDTO): Call<Void>
+
+    @PUT("/products/{id}/setcategories")
+    fun adicionarUmaListaDeCategoriasAoProduto(@Path("id") id: Long, @Header("Authorization") tokenAutenticacao: String, @Body product: List<CategoryDTO>): Call<Void>
 
 
 

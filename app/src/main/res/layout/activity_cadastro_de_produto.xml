@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_cadastro_produto_modelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Modelo"
+                android:inputType="textPersonName"
+                tools:text="Modelo" />
+
+            <EditText
+                android:id="@+id/et_cadastro_produto_placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Placa"
+                android:inputType="textPersonName"
+                tools:text="HFR-4842" />
+
+            <EditText
+                android:id="@+id/et_cadastro_produto_cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Cor"
+                android:inputType="textPersonName"
+                tools:text="cor" />
+
+            <EditText
+                android:id="@+id/et_cadastro_produto_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Descrição"
+                android:inputType="textImeMultiLine"
+                tools:text="Descrição" />
+
+            <EditText
+                android:id="@+id/et_cadastro_produto_quilometragem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Quilometragem"
+                android:inputType="number"
+                tools:text="15222" />
+
+            <EditText
+                android:id="@+id/et_cadastro_produto_preco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Preço"
+                android:inputType="numberDecimal"
+                tools:text="245" />
+
+            <EditText
+                android:id="@+id/et_cadastro_produto_urlFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint='Url da foto "http://www.foto.com.br"'
+                android:inputType="textPersonName"
+                tools:text="http://www.foto.com.br" />
+
+            <TextView
+                android:id="@+id/et_cadastro_produto_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="DISPONIVEL"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/bt_cadastro_produto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="cadastrar"
+                android:text="OK" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -42,4 +42,10 @@
     <item
         android:id="@+id/action_todas_categorias"
         android:title="Todas as Categorias" />
+    <item
+        android:id="@+id/action_novo_produto"
+        android:title="Novo Produto" />
+    <item
+        android:id="@+id/action_todos_produtos"
+        android:title="Todos os Produtos" />
 </menu>

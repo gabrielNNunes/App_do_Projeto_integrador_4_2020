@@ -13,6 +13,32 @@
         android:usesCleartextTraffic="true">
 
         <activity
+            android:name=".activities.activitiesProduct.AlteracaoDeProdutosActivity"
+            android:label="Alterar o Produto"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.activitiesProduct.ListagemDeProdutosActivity"
+            android:label="Listagem de Produtos"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.activitiesProduct.CadastroDeProdutosActivity"
+            android:label="Novo Produto"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+
+        <activity
             android:name=".activities.activitiesCategory.AlteracaoDeCategoriaActivity"
             android:label="Alterar a Categoria"
             android:parentActivityName=".activities.MainActivity">
