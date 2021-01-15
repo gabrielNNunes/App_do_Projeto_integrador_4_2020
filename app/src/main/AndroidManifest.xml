@@ -12,6 +12,8 @@
         android:theme="@style/Theme.ProjetoIntegrador42020"
         android:usesCleartextTraffic="true">
 
+
+
         <activity
             android:name=".activities.activitiesProduct.AlteracaoDeProdutosActivity"
             android:label="Alterar o Produto"
@@ -20,6 +22,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
+
         <activity
             android:name=".activities.activitiesProduct.ListagemDeProdutosActivity"
             android:label="Listagem de Produtos"

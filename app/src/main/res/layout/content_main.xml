@@ -1,32 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" >
 
-    <ImageButton
-        android:id="@+id/bt_action_login"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_action_login" />
+    <Button
+        android:id="@+id/bt_action_cadastro_de_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="carrega_cadastro_usuario"
+        android:text="Novo Cadastro de Usuário" />
 
-    <ImageButton
-        android:id="@+id/bt_action_cadastro"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_action_login"
-        app:layout_constraintVertical_bias="0.399"
-        app:srcCompat="@drawable/ic_cadastro_foreground" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/bt_action_cadastro_de_endereco_de_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="carrega_cadastro_endereco_de_usuario"
+        android:text="Novo Endereço de Usuário" />
+
+    <Button
+        android:id="@+id/bt_action_cadastro_de_concessionaria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="carrega_cadastro_concessionaria"
+        android:text="Nova Concessionária" />
+
+    <Button
+        android:id="@+id/bt_action_cadastro_de_endereco_de_concessionaria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="carrega_cadastro_endereco_concessionaria"
+        android:text="Novo Endereço de Concesionária" />
+
+    <Button
+        android:id="@+id/bt_action_cadastro_de_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="carrega_cadastro_veiculo"
+        android:text="Novo Veiculo" />
+
+    <Button
+        android:id="@+id/bt_action_cadastro_de_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="carrega_cadastro_categoria"
+        android:text="Nova Categoria" />
+</LinearLayout>

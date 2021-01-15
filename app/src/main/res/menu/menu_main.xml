@@ -13,38 +13,46 @@
         android:visible="false" />
     <item
         android:id="@+id/action_novo_user"
-        android:title="Novo usuário" />
+        android:icon="@drawable/ic_cadastro_foreground"
+        android:title="Novo usuário"
+        android:visible="false"
+        app:showAsAction="always" />
     <item
         android:id="@+id/action_todos_user"
         android:icon="@drawable/ic_action_todos"
         android:title="Todos usuários" />
     <item
         android:id="@+id/action_novo_enredeco_user"
-        android:title="Novo Endereço usuário" />
+        android:title="Novo Endereço usuário"
+        android:visible="false" />
     <item
         android:id="@+id/action_todos_enredeco_user"
         android:title="Todos Endereços usuários" />
     <item
         android:id="@+id/action_nova_concessionaria"
-        android:title="Nova Concessionária" />
+        android:title="Nova Concessionária"
+        android:visible="false" />
     <item
         android:id="@+id/action_todas_concessionarias"
         android:title="Todas as concessionárias" />
     <item
         android:id="@+id/action_novo_endereco_concessionaria"
-        android:title="Novo Endereço Concessionária" />
+        android:title="Novo Endereço Concessionária"
+        android:visible="false" />
     <item
         android:id="@+id/action_todos_enderecos_concessionaria"
         android:title="Todos Endereços de Concessionária" />
     <item
         android:id="@+id/action_nova_categoria"
-        android:title="Nova Categoria" />
+        android:title="Nova Categoria"
+        android:visible="false" />
     <item
         android:id="@+id/action_todas_categorias"
         android:title="Todas as Categorias" />
     <item
         android:id="@+id/action_novo_produto"
-        android:title="Novo Produto" />
+        android:title="Novo Produto"
+        android:visible="false" />
     <item
         android:id="@+id/action_todos_produtos"
         android:title="Todos os Produtos" />
